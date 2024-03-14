@@ -3,3 +3,13 @@
 /home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/obj/Debug/net7.0/InventoryManagementSystem.AssemblyInfoInputs.cache
 /home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/obj/Debug/net7.0/InventoryManagementSystem.AssemblyInfo.cs
 /home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/obj/Debug/net7.0/InventoryManagementSystem.csproj.CoreCompileInputs.cache
+/home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/bin/Debug/net7.0/InventoryManagementSystem
+/home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/bin/Debug/net7.0/InventoryManagementSystem.deps.json
+/home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/bin/Debug/net7.0/InventoryManagementSystem.runtimeconfig.json
+/home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/bin/Debug/net7.0/InventoryManagementSystem.dll
+/home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/bin/Debug/net7.0/InventoryManagementSystem.pdb
+/home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/obj/Debug/net7.0/InventoryManagementSystem.dll
+/home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/obj/Debug/net7.0/refint/InventoryManagementSystem.dll
+/home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/obj/Debug/net7.0/InventoryManagementSystem.pdb
+/home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/obj/Debug/net7.0/InventoryManagementSystem.genruntimeconfig.cache
+/home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/obj/Debug/net7.0/ref/InventoryManagementSystem.dll
