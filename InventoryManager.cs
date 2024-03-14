@@ -30,8 +30,8 @@ public class InventoryManager
         _productRepository.GetAllProducts();
     }
 
-    public Product GetProductById(string productId)
+    public void GetProductById(string productId)
     {
-        return _productRepository.GetProductById(productId);
+        _productRepository.GetProductById(productId);
     }
 }

@@ -26,6 +26,7 @@ public class ProductUserInteraction : IProductUserInteraction
         else
         {
             Console.WriteLine("No products available.");
+            Thread.Sleep(1000);
         }
     }
 
@@ -62,5 +63,12 @@ public class ProductUserInteraction : IProductUserInteraction
         Console.Write("Enter Product Quantity: ");
         newProduct.Quantity = Convert.ToInt32(Console.ReadLine());
         return newProduct;
+    }
+
+    public void PrintSingleProduct(Product product)
+    {
+        Console.WriteLine("***** Product *****");
+        Console.WriteLine(product);
+        Console.WriteLine();
     }
 }

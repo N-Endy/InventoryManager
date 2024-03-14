@@ -7,5 +7,5 @@ public class Product
     public decimal Price { get; set; }
     public int Quantity { get; set; }
 
-    public override string ToString() => $"{Name}\n{Description}\n{currency}{Price}\n{Quantity}";
+    public override string ToString() => $"{Name}.\n{Description}.\n{currency}{Price}.\n{Quantity}.";
 }

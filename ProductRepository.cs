@@ -39,15 +39,14 @@ public class ProductRepository : IProductRepository
         }
     }
 
-    public Product GetProductById(string productId)
+    public void GetProductById(string productId)
     {
         var productIdToBeDisplayed = _products.FirstOrDefault(p => p.ProductId == productId);
 
         if (productIdToBeDisplayed != null)
-            return productIdToBeDisplayed;
+            _productUserInteraction.PrintSingleProduct(productIdToBeDisplayed);
         else
             _productUserInteraction.ShowMessage("Product ID is not valid.");
-            return productIdToBeDisplayed;
     }
 
     public void GetAllProducts()

@@ -34,7 +34,6 @@ while (true)
             userInteraction.ShowMessage("\nEnter Product ID to be displayed: ");
             var productIdToBeDisplayed = Console.ReadLine();
             inventoryManager.GetProductById(productIdToBeDisplayed);
-            Environment.Exit(0);
             break;
         case "6":
             // Exit program
