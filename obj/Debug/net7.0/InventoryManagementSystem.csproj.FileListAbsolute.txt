@@ -1,0 +1,5 @@
+/home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/obj/Debug/net7.0/InventoryManagementSystem.csproj.AssemblyReference.cache
+/home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/obj/Debug/net7.0/InventoryManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+/home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/obj/Debug/net7.0/InventoryManagementSystem.AssemblyInfoInputs.cache
+/home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/obj/Debug/net7.0/InventoryManagementSystem.AssemblyInfo.cs
+/home/nelson/Desktop/CSharpProjects/InventoryManagementSystem/obj/Debug/net7.0/InventoryManagementSystem.csproj.CoreCompileInputs.cache
