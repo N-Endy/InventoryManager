@@ -41,7 +41,13 @@ public class ProductRepository : IProductRepository
 
     public Product GetProductById(string productId)
     {
-        return _products.FirstOrDefault(p => p.ProductId == productId);
+        var productIdToBeDisplayed = _products.FirstOrDefault(p => p.ProductId == productId);
+
+        if (productIdToBeDisplayed != null)
+            return productIdToBeDisplayed;
+        else
+            _productUserInteraction.ShowMessage("Product ID is not valid.");
+            return productIdToBeDisplayed;
     }
 
     public void GetAllProducts()
