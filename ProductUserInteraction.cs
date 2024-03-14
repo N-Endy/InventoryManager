@@ -40,5 +40,6 @@ public class ProductUserInteraction : IProductUserInteraction
     public void ShowMessage(string message)
     {
         Console.WriteLine(message);
+        Thread.Sleep(1000);
     }
 }

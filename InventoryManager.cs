@@ -13,6 +13,7 @@ public class InventoryManager
     public void AddProduct(Product product)
     {
         _productRepository.AddProduct(product);
+        _userInteraction.ShowMessage("\nProduct added successfully");
     }
 
     public void RemoveProduct(int productId)
