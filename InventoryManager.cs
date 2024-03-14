@@ -1,11 +1,13 @@
 public class InventoryManager
 {
     // List to hold all products that are in the inventory
-    private readonly IProductRepository _productRepository ;
+    private readonly IProductRepository _productRepository;
+    private readonly IProductUserInteraction _userInteraction;
 
-    public InventoryManager(IProductRepository productRepository)
+    public InventoryManager(IProductRepository productRepository, IProductUserInteraction userInteraction)
     {
         _productRepository = productRepository;
+        _userInteraction = userInteraction;
     }
 
     public void AddProduct(Product product)

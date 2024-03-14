@@ -1,5 +1,6 @@
 ﻿IProductRepository productRepository = new ProductRepository();
-var inventoryManager = new InventoryManager(productRepository);
+IProductUserInteraction userInteraction = new ProductUserInteraction();
+var inventoryManager = new InventoryManager(productRepository, userInteraction);
 
 while (true)
 {

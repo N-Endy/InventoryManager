@@ -1,4 +1,4 @@
-public interface IProductUserInteractions
+public interface IProductUserInteraction
 {
     void ShowMessage(string message);
     void Exit();

@@ -1,5 +1,5 @@
 
-public class ProductUserInteraction : IProductUserInteractions
+public class ProductUserInteraction : IProductUserInteraction
 {
     public void Exit()
     {
