@@ -46,7 +46,7 @@ public class ProductRepository : IProductRepository
     public Product CreateProduct()
     {
         Product newProduct = new();
-        Console.Write("Enter ID for Product");
+        Console.Write("\nEnter ID for Product: ");
         newProduct.ProductId = Convert.ToInt32(Console.ReadLine());
         Console.Write("Enter Product Name: ");
         newProduct.Name = Console.ReadLine();
