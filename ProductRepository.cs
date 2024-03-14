@@ -18,8 +18,8 @@ public class ProductRepository : IProductRepository
         var productToRemove = _products.FirstOrDefault(p => p.ProductId == productId);
         if (productToRemove != null)
             _products.Remove(productToRemove);
-        // else
-        //     Console.WriteLine("Product does not exist.");
+        else
+            _productUserInteraction.ShowMessage("Product does not exist.");
     }
 
     public void UpdateProduct(Product product)

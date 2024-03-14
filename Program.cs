@@ -17,7 +17,7 @@ while (true)
         case "2":
             // Remove Product
             userInteraction.ShowMessage("\nEnter Product ID to remove: ");
-            int removeProductID = Convert.ToInt32(Console.ReadLine());
+            var removeProductID = Console.ReadLine();
             inventoryManager.RemoveProduct(removeProductID);
             break;
         case "3":
