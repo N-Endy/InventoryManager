@@ -38,20 +38,10 @@ while (true)
             break;
         case "6":
             // Exit program
-            Console.WriteLine("Exiting...");
-            Environment.Exit(0);
+            userInteraction.Exit();
             break;
         default:
-            Console.WriteLine("Invalid choice. Please try again.");
+            userInteraction.ShowMessage("\nInvalid choice. Please try again.");
             break;
     }
 }
-
-// Read
-// Prompt message
-// Read input from user
-    // Add Products and show message.
-    // Remove Products by id and show message
-    // Update Product
-    // Display.
-// Exit
