@@ -1,4 +1,4 @@
-﻿IProductRepository productRepository = new ProductRepository();
+﻿IProductRepository productRepository = new ProductRepository(new ProductUserInteraction());
 IProductUserInteraction userInteraction = new ProductUserInteraction();
 var inventoryManager = new InventoryManager(productRepository, userInteraction);
 
