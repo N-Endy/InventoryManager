@@ -45,3 +45,12 @@ while (true)
             break;
     }
 }
+
+// Read
+// Prompt message
+// Read input from user
+    // Add Products and show message.
+    // Remove Products by id and show message
+    // Update Product
+    // Display.
+// Exit
