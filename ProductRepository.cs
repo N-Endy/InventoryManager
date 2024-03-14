@@ -1,6 +1,12 @@
 public class ProductRepository : IProductRepository
 {
+    private readonly IProductUserInteraction _productUserInteraction;
     private readonly List<Product> _products = new();
+
+    public ProductRepository(IProductUserInteraction userInterface)
+    {
+        _productUserInteraction = userInterface;
+    }
 
     public void AddProduct(Product product)
     {
@@ -38,9 +44,9 @@ public class ProductRepository : IProductRepository
         return _products.FirstOrDefault(p => p.ProductId == productId);
     }
 
-    public IEnumerable<Product> GetAllProducts()
+    public void GetAllProducts()
     {
-        return _products;
+        _productUserInteraction.PrintAllProducts(_products);
     }
 
     public Product CreateProduct()

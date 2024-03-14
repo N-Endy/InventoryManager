@@ -23,6 +23,10 @@ public class ProductUserInteraction : IProductUserInteraction
                 ++counter;
             }
         }
+        else
+        {
+            Console.WriteLine("No products available.");
+        }
     }
 
     public void PromptToSelectOption()

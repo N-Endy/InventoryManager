@@ -4,6 +4,6 @@ public interface IProductRepository
     void RemoveProduct(int productId);
     void UpdateProduct(Product product);
     Product GetProductById(int productId);
-    IEnumerable<Product> GetAllProducts();
+    void GetAllProducts();
     Product CreateProduct();
 }
