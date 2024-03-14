@@ -5,6 +5,8 @@ public class ProductRepository : IProductRepository
     public void AddProduct(Product product)
     {
         _products.Add(product);
+        Console.WriteLine("\nProduct added successfully");
+        Thread.Sleep(1000);
     }
 
     public void RemoveProduct(int productId)
