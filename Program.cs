@@ -11,7 +11,7 @@ while (true)
     {
         case "1":
             // Add Product
-            Product newProduct = productRepository.CreateProduct();
+            Product newProduct = userInteraction.CreateProduct();
             inventoryManager.AddProduct(newProduct);
             break;
         case "2":
@@ -22,7 +22,7 @@ while (true)
             break;
         case "3":
             // Update Product
-            Product updatedProduct = productRepository.CreateProduct();
+            Product updatedProduct = userInteraction.CreateProduct();
             inventoryManager.UpdateProduct(updatedProduct);
             break;
         case "4":

@@ -47,4 +47,20 @@ public class ProductUserInteraction : IProductUserInteraction
         Console.WriteLine(message);
         Thread.Sleep(1000);
     }
+
+    public Product CreateProduct()
+    {
+        Product newProduct = new();
+        Console.WriteLine("\nEnter ID for Product: ");
+        newProduct.ProductId = Console.ReadLine();
+        Console.Write("Enter Product Name: ");
+        newProduct.Name = Console.ReadLine();
+        Console.Write("Enter Product Description: ");
+        newProduct.Description = Console.ReadLine();
+        Console.Write("Enter Product Price: ");
+        newProduct.Price = Convert.ToDecimal(Console.ReadLine());
+        Console.Write("Enter Product Quantity: ");
+        newProduct.Quantity = Convert.ToInt32(Console.ReadLine());
+        return newProduct;
+    }
 }

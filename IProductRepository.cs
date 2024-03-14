@@ -5,5 +5,4 @@ public interface IProductRepository
     void UpdateProduct(Product product);
     Product GetProductById(string productId);
     void GetAllProducts();
-    Product CreateProduct();
 }

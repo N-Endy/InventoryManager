@@ -4,4 +4,5 @@ public interface IProductUserInteraction
     void Exit();
     void PrintAllProducts(List<Product> allProducts);
     void PromptToSelectOption();
+    Product CreateProduct();
 }
