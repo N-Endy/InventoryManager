@@ -4,39 +4,37 @@ var inventoryManager = new InventoryManager(productRepository, userInteraction);
 
 while (true)
 {
-    Console.WriteLine("\nInventory Management System");
-    Console.WriteLine("1. Add Product");
-    Console.WriteLine("2. Remove Product");
-    Console.WriteLine("3. Update Product");
-    Console.WriteLine("4. Display All Products");
-    Console.WriteLine("5. Exit");
-
-    Console.Write("Enter your choice: ");
-    int choice = Convert.ToInt32(Console.ReadLine());
+    userInteraction.PromptToSelectOption();
+    var choice = Console.ReadLine();
 
     switch (choice)
     {
-        case 1:
+        case "1":
             // Add Product
             Product newProduct = productRepository.CreateProduct();
             inventoryManager.AddProduct(newProduct);
             break;
-        case 2:
+        case "2":
             // Remove Product
-            Console.Write("Enter Product ID to remove: ");
+            userInteraction.ShowMessage("\nEnter Product ID to remove: ");
             int removeProductID = Convert.ToInt32(Console.ReadLine());
             inventoryManager.RemoveProduct(removeProductID);
             break;
-        case 3:
+        case "3":
             // Update Product
             Product updatedProduct = productRepository.CreateProduct();
             inventoryManager.UpdateProduct(updatedProduct);
             break;
-        case 4:
+        case "4":
             // Display All Products
             inventoryManager.GetAllProducts();
             break;
-        case 5:
+        case "5":
+            // Display Single Product
+            Console.WriteLine("Exiting...");
+            Environment.Exit(0);
+            break;
+        case "6":
             // Exit program
             Console.WriteLine("Exiting...");
             Environment.Exit(0);

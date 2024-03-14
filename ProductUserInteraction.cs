@@ -36,7 +36,8 @@ public class ProductUserInteraction : IProductUserInteraction
         Console.WriteLine("2. Remove Product");
         Console.WriteLine("3. Update Product");
         Console.WriteLine("4. Display All Products");
-        Console.WriteLine("5. Exit");
+        Console.WriteLine("5. Display Single Products");
+        Console.WriteLine("6. Exit");
 
         Console.Write("\nEnter your choice: ");
     }

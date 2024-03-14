@@ -1,9 +1,9 @@
 public interface IProductRepository
 {
     void AddProduct(Product product);
-    void RemoveProduct(int productId);
+    void RemoveProduct(string productId);
     void UpdateProduct(Product product);
-    Product GetProductById(int productId);
+    Product GetProductById(string productId);
     void GetAllProducts();
     Product CreateProduct();
 }

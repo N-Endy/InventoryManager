@@ -13,7 +13,7 @@ public class ProductRepository : IProductRepository
         _products.Add(product);
     }
 
-    public void RemoveProduct(int productId)
+    public void RemoveProduct(string productId)
     {
         var productToRemove = _products.FirstOrDefault(p => p.ProductId == productId);
         if (productToRemove != null)
@@ -39,7 +39,7 @@ public class ProductRepository : IProductRepository
         // }
     }
 
-    public Product GetProductById(int productId)
+    public Product GetProductById(string productId)
     {
         return _products.FirstOrDefault(p => p.ProductId == productId);
     }
@@ -52,16 +52,16 @@ public class ProductRepository : IProductRepository
     public Product CreateProduct()
     {
         Product newProduct = new();
-        Console.Write("\nEnter ID for Product: ");
-        newProduct.ProductId = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Enter Product Name: ");
-        newProduct.Name = Console.ReadLine();
-        Console.Write("Enter Product Description: ");
-        newProduct.Description = Console.ReadLine();
-        Console.Write("Enter Product Price: ");
-        newProduct.Price = Convert.ToDecimal(Console.ReadLine());
-        Console.Write("Enter Product Quantity: ");
-        newProduct.Quantity = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("\nEnter ID for Product: ");
+        // newProduct.ProductId = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Enter Product Name: ");
+        // newProduct.Name = Console.ReadLine();
+        // Console.Write("Enter Product Description: ");
+        // newProduct.Description = Console.ReadLine();
+        // Console.Write("Enter Product Price: ");
+        // newProduct.Price = Convert.ToDecimal(Console.ReadLine());
+        // Console.Write("Enter Product Quantity: ");
+        // newProduct.Quantity = Convert.ToInt32(Console.ReadLine());
         return newProduct;
     }
 }

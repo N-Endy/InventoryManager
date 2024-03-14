@@ -16,7 +16,7 @@ public class InventoryManager
         _userInteraction.ShowMessage("\nProduct added successfully");
     }
 
-    public void RemoveProduct(int productId)
+    public void RemoveProduct(string productId)
     {
         _productRepository.RemoveProduct(productId);
     }
